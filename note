@@ -1,0 +1,7 @@
+1) user : root
+   mdp : admin
+  
+ 2) VM1
+ failed to start kdump error handler
+ 
+ correction : $ systemctl stop kdump.service
