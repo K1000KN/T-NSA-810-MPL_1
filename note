@@ -7,3 +7,6 @@
  failed to start kdump error handler
  
  correction : $ systemctl stop kdump.service
+
+dirty cow ->
+https://bobcares.com/blog/dirty-cow-vulnerability/
