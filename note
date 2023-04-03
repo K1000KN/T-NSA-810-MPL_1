@@ -24,3 +24,5 @@ fichier ormconfig -> admin admin
                                           - 8080:8080
                                        restart: always
                               -> dockerfile copy/colle dockerfile back
+                              
+http://localhost:3000/swagger-stats/ui#sws_rates
