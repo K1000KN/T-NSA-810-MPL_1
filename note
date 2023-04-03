@@ -10,3 +10,5 @@
 
 dirty cow -> version des vm "3.10.0-327.el7.x86_64" version à avoir "kernel-3.10.0-427.10.1.lve1.4.22.el7"
 https://bobcares.com/blog/dirty-cow-vulnerability/
+
+docker backstudent -> user et mot de passe incorrect -> changer dans le docker file mettre "admin"
