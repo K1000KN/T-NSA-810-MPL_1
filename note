@@ -12,3 +12,15 @@ dirty cow -> version des vm "3.10.0-327.el7.x86_64" version à avoir "kernel-3.1
 https://bobcares.com/blog/dirty-cow-vulnerability/
 
 docker backstudent -> user et mot de passe incorrect -> changer dans le docker file mettre "admin"
+fichier ormconfig -> admin admin
+         dockercompose backstudent -> admin
+ fichier modifer frontstudent -> docker-compose
+                                 -> services:
+                                     front:
+                                       build:
+                                          context: ./
+                                          dockerfile: Dockerfile
+                                       ports:
+                                          - 8080:8080
+                                       restart: always
+                              -> dockerfile copy/colle dockerfile back
