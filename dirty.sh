@@ -4,6 +4,7 @@ SHELL="/bin/sh"
 TFILE="/tmp/.X11-unix/X"
 FNAME="/tmp/baby"
 
+# Définition de la fonction de gestion de sigsegv
 sigsegv_handler() {
     g_done=1
 }
@@ -32,6 +33,7 @@ race() {
     done
 }
 
+# Définition de la fonction pour précédente
 do_race() {
     addr=$1
     for i in {1..32}
@@ -49,6 +51,7 @@ do_race() {
     done
 }
 
+# Lancement de la protection
 fd=$(mktemp)
 map=$(sudo mmap $fd 4096 PROT_READ MAP_PRIVATE 0)
 if [ $map == "MAP_FAILED" ]
