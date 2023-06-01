@@ -1,5 +1,7 @@
 # <p align="center"> Procédure de Dirty.sh </p>
-  
+ 
+ ## Verification de la version du noyau
+ 
 1. Récuperation de la version du noyau en utilisant la commande uname -r et la stocke dans la variable kernel_version.
 2. Affichage  la version du noyau à l'aide de la commande echo.
 3. Récupération de la date du noyau à partir du fichier /proc/version en utilisant la commande cat /proc/version | awk '{print $3}' et la stocke dans la variable kernel_date.
