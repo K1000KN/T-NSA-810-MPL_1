@@ -9,7 +9,7 @@
 #### Patrick ARNAUD
 - Email: [Write me ](mailto:partick.arnaud@epitech.eu)
 
-#### Pierre hung TSANG-TUNG
+#### Pierre Hung TSANG-TUNG
 - Email: [Write me ](mailto:pierre-hung.tsang-tung@epitech.eu)
 
 
