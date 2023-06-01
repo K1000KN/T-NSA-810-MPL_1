@@ -1,23 +1,23 @@
 # <p align="center"> Procédure de Dirty.sh </p>
   
-## Verification si on est Vulnérable au DIRTYCOW avec check_dirty
+# Verification si on est Vulnérable au DIRTYCOW avec check_dirty
 
-# Vérification de la version du noyau
+## Vérification de la version du noyau
 kernel_version=$(uname -r)
 echo "Version du noyau : $kernel_version"
 
-# Vérification de la date du noyau
+## Vérification de la date du noyau
 kernel_date=$(cat /proc/version | awk '{print $3}')
 echo "Date du noyau : $kernel_date"
 
-# Vérification de la vulnérabilité Dirty COW
+## Vérification de la vulnérabilité Dirty COW
 if [[ "$kernel_date" < "2016-10-20" ]]; then
   echo "Votre système est potentiellement vulnérable à Dirty COW."
 else
   echo "Votre système n'est pas vulnérable à Dirty COW."
 fi
 
-## Si on est vulenerable voir dirty.sh
+# Si on est vulenerable voir dirty.sh
 
 1. Définition des variables : Le script commence par définir certaines variables,
 telles que le chemin vers le shell (`SHELL`), le fichier de socket X11 (`TFILE`), et le nom du fichier temporaire (`FNAME`).
