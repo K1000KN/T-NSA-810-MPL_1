@@ -35,3 +35,9 @@ S'il n'y a pas d'échec, le script utilise à nouveau `sudo mmap` pour modifier 
 En résumé, le script tente de créer une race condition en utilisant les commandes `mmap` et `madvise` pour potentiellement se protéger du Dirty COW.
 Cependant, il est important de noter que cette méthode n'est pas une solution de protection complète et fiable.
 Pour une protection adéquate, il est recommandé de maintenir votre système à jour en appliquant les correctifs de sécurité fournis par votre distribution Linux.
+
+## Version de nos VMs
+
+La version du noyau est le 3.10.0-327.el7.x86_64. Il fait partie de la branche du noyau pour CentOS/RHEL 7.x. Cette version spécifique a été corrigée pour inclure les correctifs de sécurité de Dirty COW.
+
+Le correctif pour Dirty COW a été inclus dans les mises à jour du noyau pour CentOS/RHEL, et il est fort probable que cette version a inclut le correctif
