@@ -4,20 +4,20 @@
 
 kernel_version=$(uname -r)
 
-echo "Version du noyau : $kernel_version"
+  echo "Version du noyau : $kernel_version"
 
 kernel_date=$(cat /proc/version | awk '{print $3}')
 
-echo "Date du noyau : $kernel_date"
+  echo "Date du noyau : $kernel_date"
 
 if [[ "$kernel_date" < "2016-10-20" ]]; then
 
 
- echo "Votre système est potentiellement vulnérable à Dirty COW."
+  echo "Votre système est potentiellement vulnérable à Dirty COW."
 
 else
  
-  echo "Votre système n'est pas vulnérable à Dirty COW."
+   echo "Votre système n'est pas vulnérable à Dirty COW."
 
  fi
 
