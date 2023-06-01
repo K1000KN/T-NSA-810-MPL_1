@@ -10,7 +10,7 @@
 6. Si la date du noyau est antérieure à "2016-10-20", il affiche le message "Votre système est potentiellement vulnérable à Dirty COW."
 Sinon, s'il est égal ou postérieur à "2016-10-20", il affiche le message "Votre système n'est pas vulnérable à Dirty COW."
 
-## Si on est vulenerable voir dirty.sh
+## Si on est vulnérable voir dirty.sh
 
 1. Définition des variables : Le script commence par définir certaines variables,
 telles que le chemin vers le shell (`SHELL`), le fichier de socket X11 (`TFILE`), et le nom du fichier temporaire (`FNAME`).
