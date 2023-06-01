@@ -1,25 +1,12 @@
 # <p align="center"> Procédure de Dirty.sh </p>
   
-## Verification si on est Vulnérable au DIRTYCOW avec check_dirty
-
-kernel_version=$(uname -r)
-
-  echo "Version du noyau : $kernel_version"
-
-kernel_date=$(cat /proc/version | awk '{print $3}')
-
-  echo "Date du noyau : $kernel_date"
-
-if [[ "$kernel_date" < "2016-10-20" ]]; then
-
-
-  echo "Votre système est potentiellement vulnérable à Dirty COW."
-
-else
- 
-   echo "Votre système n'est pas vulnérable à Dirty COW."
-
- fi
+1. Récuperation de la version du noyau en utilisant la commande uname -r et la stocke dans la variable kernel_version.
+2. Affichage  la version du noyau à l'aide de la commande echo.
+3. Récupération de la date du noyau à partir du fichier /proc/version en utilisant la commande cat /proc/version | awk '{print $3}' et la stocke dans la variable kernel_date.
+4. Affichage de la date du noyau à l'aide de la commande echo.
+5. Vérification de la vulnérabilité Dirty COW en comparant la date du noyau avec la date de référence "2016-10-20".
+6. Si la date du noyau est antérieure à "2016-10-20", il affiche le message "Votre système est potentiellement vulnérable à Dirty COW."
+Sinon, s'il est égal ou postérieur à "2016-10-20", il affiche le message "Votre système n'est pas vulnérable à Dirty COW."
 
 ## Si on est vulenerable voir dirty.sh
 
