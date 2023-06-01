@@ -3,9 +3,11 @@
 ## Verification si on est Vulnérable au DIRTYCOW avec check_dirty
 
 kernel_version=$(uname -r)
+
 echo "Version du noyau : $kernel_version"
 
 kernel_date=$(cat /proc/version | awk '{print $3}')
+
 echo "Date du noyau : $kernel_date"
 
 if [[ "$kernel_date" < "2016-10-20" ]]; then
