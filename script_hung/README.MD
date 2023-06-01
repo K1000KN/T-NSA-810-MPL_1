@@ -2,7 +2,7 @@
   
 ## Verification si on est Vulnérable au DIRTYCOW avec check_dirty
 
-kernel_version=$(uname -r)
+*kernel_version=$(uname -r)
 
   echo "Version du noyau : $kernel_version"
 
@@ -19,7 +19,7 @@ else
  
    echo "Votre système n'est pas vulnérable à Dirty COW."
 
- fi
+ fi *
 
 ## Si on est vulenerable voir dirty.sh
 
